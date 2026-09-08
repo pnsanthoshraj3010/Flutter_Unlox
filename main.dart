@@ -18,10 +18,31 @@ class MyApp extends StatelessWidget
                   (
                    appBar : AppBar
                             (
-                              title : Text("Profile")
+                             title : Text("PROFILE")
                             ),
-                   body : Text
-                          ("Hi Iam Santhosh Raj P N , Iam Studying CSE(AIML) , I Like To Learn About Technology...")
+                   body : Center
+                          (
+                           child : Container
+                                   (
+                                    height : 100,
+                                    width : 100,
+                                    decoration : BoxDecoration
+                                                 (
+                                                  borderRadius : BorderRadius.circular(16),
+                                                  color : Colors.amber
+                                                 ),
+                                    margin : EdgeInsets.all(2),
+                                    padding : EdgeInsets.all(5),
+                                    child : Column
+                                            (
+                                             children : [
+                                                         Text("Data 1"),
+                                                         SizedBox(height : 15),
+                                                         Text("Data 2")
+                                                        ]
+                                            ) 
+                                   )
+                          )
                   )
           );
   }
